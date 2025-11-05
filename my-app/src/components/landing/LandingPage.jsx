@@ -239,6 +239,7 @@ export function LandingPage({ onGetStarted }) {
               <Button
                 size="lg"
                 variant="outline"
+                onClick={() => window.open("https://mail.google.com", "_blank")}
                 className="border-white/30 bg-white text-[#6D8BFF] hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6 h-auto"
               >
                 Contact Sales
