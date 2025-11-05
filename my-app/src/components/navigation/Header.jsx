@@ -140,7 +140,7 @@ export function Header({ onCreateProject, showSearch = true }) {
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
-              className="bg-white/95 backdrop-blur-md border-white/20"
+              className="bg-white/5 backdrop-blur-md border-white/10"
             >
               <div className="p-3">
                 <p className="font-medium">{user.name}</p>

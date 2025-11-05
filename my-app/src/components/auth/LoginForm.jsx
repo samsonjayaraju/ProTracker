@@ -84,7 +84,7 @@ export function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+  <div className="min-h-screen bg-gradient-to-br from-[#6D8BFF] via-[#8FD3FF] to-[#FFB86B] dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 flex items-center justify-center p-4">
       <GlassCard className="w-full max-w-md">
         <div className="p-8">
           <div className="text-center mb-8">

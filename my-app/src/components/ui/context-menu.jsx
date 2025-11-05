@@ -4,7 +4,6 @@ import * as React from "react";
 import * as ContextMenuPrimitive from "@radix-ui/react-context-menu";
 import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react";
 
-// Assuming 'cn' is imported from an existing utility file
 import { cn } from "./utils";
 
 // --- Root Components ---

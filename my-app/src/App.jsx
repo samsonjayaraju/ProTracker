@@ -12,6 +12,14 @@ import { ProjectCard } from "./components/projects/ProjectCard"
 import { GlassCard } from "./components/ui/glass-card"
 import { Toaster } from "./components/ui/sonner"
 import { sampleProjects, getProjectsByUserId } from "./data/sampleData"
+import { PortfolioSection } from "./components/dashboard/PortfolioSection"
+import { MilestonesSection } from "./components/dashboard/MilestonesSection"
+import { DiscoverSection } from "./components/dashboard/DiscoverSection"
+import { SettingsSection } from "./components/dashboard/SettingsSection"
+import { StudentsSection } from "./components/dashboard/StudentsSection"
+import { AnalyticsSection } from "./components/dashboard/AnalyticsSection"
+
+
 
 function AppContent() {
   const { user, isAuthenticated } = useAuth()
@@ -114,28 +122,11 @@ function AppContent() {
         }
 
       case "milestones":
-        return (
-          <GlassCard>
-            <div className="p-8 text-center">
-              <h1 className="text-3xl font-bold mb-4">Milestones</h1>
-              <p className="text-muted-foreground">
-                Milestone management interface coming soon...
-              </p>
-            </div>
-          </GlassCard>
-        )
+  return <MilestonesSection />
+
 
       case "portfolio":
-        return (
-          <GlassCard>
-            <div className="p-8 text-center">
-              <h1 className="text-3xl font-bold mb-4">Portfolio</h1>
-              <p className="text-muted-foreground">
-                Public portfolio interface coming soon...
-              </p>
-            </div>
-          </GlassCard>
-        )
+  return <PortfolioSection />
 
       case "discover":
         return (
@@ -159,40 +150,13 @@ function AppContent() {
         )
 
       case "students":
-        return (
-          <GlassCard>
-            <div className="p-8 text-center">
-              <h1 className="text-3xl font-bold mb-4">Students</h1>
-              <p className="text-muted-foreground">
-                Student management interface coming soon...
-              </p>
-            </div>
-          </GlassCard>
-        )
+  return <StudentsSection />
 
       case "analytics":
-        return (
-          <GlassCard>
-            <div className="p-8 text-center">
-              <h1 className="text-3xl font-bold mb-4">Analytics</h1>
-              <p className="text-muted-foreground">
-                Analytics dashboard coming soon...
-              </p>
-            </div>
-          </GlassCard>
-        )
+  return <AnalyticsSection />
 
       case "settings":
-        return (
-          <GlassCard>
-            <div className="p-8 text-center">
-              <h1 className="text-3xl font-bold mb-4">Settings</h1>
-              <p className="text-muted-foreground">
-                Settings interface coming soon...
-              </p>
-            </div>
-          </GlassCard>
-        )
+  return <SettingsSection />
 
       default:
         return (
@@ -213,7 +177,7 @@ function AppContent() {
       <Header onCreateProject={handleCreateProject} />
       <div className="flex">
         <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
-        <main className="flex-1 mr-4">{renderMainContent()}</main>
+        <main className="flex-1 ml-64 p-8 mr-4">{renderMainContent()}</main>
       </div>
       <Toaster />
     </div>
