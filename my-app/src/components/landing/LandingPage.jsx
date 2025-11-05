@@ -1,8 +1,15 @@
-import { ArrowRight, CheckCircle, Users, Target, Eye, Play } from "lucide-react"
-import { Button } from "../ui/button"
-import { GlassCard } from "../ui/glass-card"
-import { Badge } from "../ui/badge"
-import { ImageWithFallback } from "../figma/ImageWithFallback"
+import {
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Target,
+  Eye,
+  Play,
+} from "lucide-react";
+import { Button } from "../ui/button";
+import { GlassCard } from "../ui/glass-card";
+import { Badge } from "../ui/badge";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 export function LandingPage({ onGetStarted }) {
   const features = [
@@ -10,27 +17,27 @@ export function LandingPage({ onGetStarted }) {
       icon: Target,
       title: "Milestone Tracking",
       description:
-        "Break down projects into manageable milestones and track progress in real-time."
+        "Break down projects into manageable milestones and track progress in real-time.",
     },
     {
       icon: Eye,
       title: "Public Portfolios",
       description:
-        "Showcase your best work with recruiter-friendly public portfolios."
+        "Showcase your best work with recruiter-friendly public portfolios.",
     },
     {
       icon: Users,
       title: "Faculty Dashboard",
       description:
-        "Teachers can monitor student progress and provide timely feedback."
+        "Teachers can monitor student progress and provide timely feedback.",
     },
     {
       icon: CheckCircle,
       title: "Media Uploads",
       description:
-        "Upload images, videos, and documents to showcase your projects."
-    }
-  ]
+        "Upload images, videos, and documents to showcase your projects.",
+    },
+  ];
 
   const testimonials = [
     {
@@ -39,7 +46,7 @@ export function LandingPage({ onGetStarted }) {
       content:
         "ProTrackr helped me organize my projects and made it easy to share my work with potential employers.",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
       name: "Prof. Arvind Rao",
@@ -47,7 +54,7 @@ export function LandingPage({ onGetStarted }) {
       content:
         "The faculty dashboard gives me great visibility into student progress. I can provide feedback right when it's needed.",
       avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     },
     {
       name: "Samson Jaya Raju",
@@ -55,9 +62,9 @@ export function LandingPage({ onGetStarted }) {
       content:
         "The portfolio feature helped me land my dream internship. Recruiters love the clean, professional presentation.",
       avatar:
-        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop&crop=face"
-    }
-  ]
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop&crop=face",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#6D8BFF] via-[#8FD3FF] to-[#FFB86B] dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
@@ -153,7 +160,7 @@ export function LandingPage({ onGetStarted }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => {
-            const Icon = feature.icon
+            const Icon = feature.icon;
             return (
               <GlassCard key={index} className="text-center">
                 <div className="p-8">
@@ -168,7 +175,7 @@ export function LandingPage({ onGetStarted }) {
                   </p>
                 </div>
               </GlassCard>
-            )
+            );
           })}
         </div>
       </div>
@@ -239,7 +246,12 @@ export function LandingPage({ onGetStarted }) {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => window.open("https://mail.google.com", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=2400030991@kluniversity.in",
+                    "_blank"
+                  )
+                }
                 className="border-white/30 bg-white text-[#6D8BFF] hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6 h-auto"
               >
                 Contact Sales
@@ -337,5 +349,5 @@ export function LandingPage({ onGetStarted }) {
         </div>
       </footer>
     </div>
-  )
+  );
 }
