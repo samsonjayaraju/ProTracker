@@ -1,15 +1,8 @@
 import * as React from "react";
-
-// Assuming 'cn' is imported from an existing utility file
 import { cn } from "./utils";
 
 // --- Card Components ---
 
-/**
- * ##  Card
- * The main container for the card component.
- */
-// Original: function Card({ className, ...props }: React.ComponentProps<"div">) {
 function Card({ className, ...props }) {
   return (
     <div
@@ -48,7 +41,7 @@ function CardHeader({ className, ...props }) {
 //---
 
 /**
- * ## 🏷️ CardTitle
+ * ## CardTitle
  * Primary heading for the card content.
  */
 // Original: function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
@@ -66,7 +59,7 @@ function CardTitle({ className, ...props }) {
 //---
 
 /**
- * ## 💬 CardDescription
+ * ##  CardDescription
  * Supplementary text to describe the card's purpose or content.
  */
 // Original: function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
@@ -83,7 +76,7 @@ function CardDescription({ className, ...props }) {
 //---
 
 /**
- * ## ⚙️ CardAction
+ * ##  CardAction
  * A placement slot for elements like buttons or dropdown menus, typically in the top right.
  */
 // Original: function CardAction({ className, ...props }: React.ComponentProps<"div">) {
@@ -104,7 +97,7 @@ function CardAction({ className, ...props }) {
 //---
 
 /**
- * ## 📦 CardContent
+ * ##  CardContent
  * The main body content area of the card.
  */
 // Original: function CardContent({ className, ...props }: React.ComponentProps<"div">) {
@@ -122,7 +115,7 @@ function CardContent({ className, ...props }) {
 //---
 
 /**
- * ## ⬇️ CardFooter
+ * ##  CardFooter
  * A dedicated area at the bottom for actions or summary information.
  */
 // Original: function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
