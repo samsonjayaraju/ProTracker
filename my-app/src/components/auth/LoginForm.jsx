@@ -174,7 +174,7 @@ export function LoginForm() {
                 <p className="text-sm font-medium mb-2">Test Accounts:</p>
                 <div className="text-xs space-y-1 text-muted-foreground">
                   <p>Student: rahul@example.com / Password123</p>
-                  <p>Faculty: arvind@example.edu / Password123</p>
+                  <p>Faculty: praveen@example.edu / Password123</p>
                   <p>Admin: hari@example.edu / Password123</p>
                 </div>
               </div>

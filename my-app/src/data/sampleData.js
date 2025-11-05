@@ -26,8 +26,8 @@ export const sampleUsers = [
   },
   {
     id: '3',
-    name: 'Prof. Arvind Rao',
-    email: 'arvind@example.edu',
+    name: 'Prof. Praveen Kumar',
+    email: 'praveen@example.edu',
     role: 'faculty',
     department: 'Computer Science',
     avatarURL: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
