@@ -49,7 +49,7 @@ export function LandingPage({ onGetStarted }) {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
-      name: "Prof. Arvind Rao",
+      name: "Dr. Praveen Kumar",
       role: "Faculty, CS Department",
       content:
         "The faculty dashboard gives me great visibility into student progress. I can provide feedback right when it's needed.",
